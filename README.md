@@ -14,3 +14,15 @@ exercice 2
 
 exercice 3
 ----------
+
+	* recettes 1:
+		1) //titre
+		2) //nom_ing
+		3) /cuisine/recette[2]/titre
+		4) /cuisine/recette/texte/etape[position()=last()]
+
+	* recettes 2:
+		1) //titre
+		2) //ingredient
+		3) /cuisine/recette[2]/titre
+		4) /cuisine/recette/texte/etape[position()=last()]

@@ -89,26 +89,26 @@ exercice 2
 exercice 3
 ----------
 * recettes 1:
-1. //titre
-2. //nom_ing
-3. /cuisine/recette[2]/titre
-4. /cuisine/recette/texte/etape[position()=last()]
-5. count(/cuisine/recette)
-6. /cuisine/recette[count(./ingredients/ingredient)<7]
-7. /cuisine/recette/titre[count(../ingredients/ingredient)<7]
-8.
-9.
+    1. //titre
+    2. //nom_ing
+    3. /cuisine/recette[2]/titre
+    4. /cuisine/recette/texte/etape[position()=last()]
+    5. count(/cuisine/recette)
+    6. /cuisine/recette[count(./ingredients/ingredient)<7]
+    7. /cuisine/recette/titre[count(../ingredients/ingredient)<7]
+    8.
+    9.
 
 * recettes 2:
-1. //titre
-2. //ingredient
-3. /cuisine/recette[2]/titre
-4. /cuisine/recette/texte/etape[position()=last()]
-5. count(/cuisine/recette)
-6. /cuisine/recette[count(./ingredients/ing-recette)<7]
-7. /cuisine/recette/titre[count(../ingredients/ing-recette)<7]
-8.
-9.
+    1. //titre
+    2. //ingredient
+    3. /cuisine/recette[2]/titre
+    4. /cuisine/recette/texte/etape[position()=last()]
+    5. count(/cuisine/recette)
+    6. /cuisine/recette[count(./ingredients/ing-recette)<7]
+    7. /cuisine/recette/titre[count(../ingredients/ing-recette)<7]
+    8.
+    9.
 
 
 exercice 4

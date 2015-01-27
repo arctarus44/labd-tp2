@@ -7,71 +7,71 @@ Arthur Dewarumez
 exercice 1
 ----------
 1. Question 1
-*//livre[titre="edition"] sélection le ou les nœuds livre dont le fils titre faut "edition"
+* //livre[titre="edition"] sélection le ou les nœuds livre dont le fils titre faut "edition"
 
-*//livre[titre=edition] sélection le ou les nœuds livre dont le file titre est identique au nœud edition
+* //livre[titre=edition] sélection le ou les nœuds livre dont le file titre est identique au nœud edition
 
-*Pour que ces le résultat de ces deux expressions soit égale, on peu utiliser le fichier suivant
+* Pour que ces le résultat de ces deux expressions soit égale, on peu utiliser le fichier suivant
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <bibliotheque>
-<livre>
-<titre>edition</titre>
-<edition>edition</edition>
-</livre>
-<livre>
-<titre>editions</titre>
-<edition>edition</edition>
-</livre>
+	<livre>
+		<titre>edition</titre>
+		<edition>edition</edition>
+	</livre>
+	<livre>
+		<titre>editions</titre>
+		<edition>edition</edition
+	</livre>
 </bibliotheque>
 ```
 
 2. Question 2
-*/item/livre[@titre="labd" and position()=last()] : retourne le dernier les élément livre ayant un attribut titre à labd et qui se trouve en dernière position
-*/item/livre[@titre="labd"] [position()=last()] : retourne les élément livre contenant un attribut titre à labd et sélectionne le dernier
-*/item/livre[position()=last()] [@titre="labd"] : retourne le dernier éléments livre et filtre en fonction de la présence d'un attribut titre valant labd
+* /item/livre[@titre="labd" and position()=last()] : retourne le dernier les élément livre ayant un attribut titre à labd et qui se trouve en dernière position
+* /item/livre[@titre="labd"] [position()=last()] : retourne les élément livre contenant un attribut titre à labd et sélectionne le dernier
+* /item/livre[position()=last()] [@titre="labd"] : retourne le dernier éléments livre et filtre en fonction de la présence d'un attribut titre valant labd
 
-*```xml
+* ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <item>
-<livre titre="labd">
-<titre>edition</titre>
-<edition>edition</edition>
-</livre>
-<livre>
-<titre>editions</titre>
-<edition>edition</edition>
-</livre>
-<livre titre="labda">
-<titre>edition</titre>
-<edition>edition</edition>
-</livre>
+	<livre titre="labd">
+		<titre>edition</titre>
+		<edition>edition</edition>
+	</livre>
+	<livre>
+		<titre>editions</titre>
+		<edition>edition</edition>
+	</livre>
+	<livre titre="labda">
+		<titre>edition</titre>
+		<edition>edition</edition>
+	</livre>
 </item>
 ```
 
 Pour ce fichier, la première expression retournera rien, la deuxième expression retournera le premier nœud livre, la dernière expression retournera rien.
 
 3. Question 3
-*//livre[1] : retourne le premier livre de chaque nœud
-*/descendant::livre[1] : retourne le premier livre de la racine
+* //livre[1] : retourne le premier livre de chaque nœud
+* /descendant::livre[1] : retourne le premier livre de la racine
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <item>
-<a>
-<livre titre="labd">
-<titre>edition</titre>
-<edition>edition</edition>
-</livre>
-</a>
-<livre>
-<titre>editions</titre>
-<edition>edition</edition>
-</livre>
-<livre titre="labda">
-<titre>edition</titre>
-<edition>edition</edition>
-</livre>
+	<a>
+	<livre titre="labd">
+		<titre>edition</titre>
+		<edition>edition</edition>
+		</livre>
+	</a>
+	<livre>
+		<titre>editions</titre>
+		<edition>edition</edition>
+	</livre>
+		<livre titre="labda">
+		<titre>edition</titre>
+		<edition>edition</edition>
+	</livre>
 </item>
 ```
 

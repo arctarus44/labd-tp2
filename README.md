@@ -6,7 +6,7 @@ Arthur Dewarumez
 
 exercice 1
 ----------
-....1. Question 1
+    1. Question 1
         *//livre[titre="edition"] sélection le ou les nœuds livre dont le fils titre faut "edition"
 
         *//livre[titre=edition] sélection le ou les nœuds livre dont le file titre est identique au nœud edition
@@ -16,14 +16,14 @@ exercice 1
         ```xml
         <?xml version="1.0" encoding="UTF-8"?>
         <bibliotheque>
-        ....<livre>
-        ........<titre>edition</titre>
-........        <edition>edition</edition>
-        ....</livre>
-        ....<livre>
-        ........<titre>editions</titre>
-        ........<edition>edition</edition>
-        ....</livre>
+            <livre>
+            <titre>edition</titre>
+                <edition>edition</edition>
+            </livre>
+            <livre>
+                <titre>editions</titre>
+                <edition>edition</edition>
+            </livre>
         </bibliotheque>
         ```
 
@@ -36,17 +36,17 @@ exercice 1
         <?xml version="1.0" encoding="UTF-8"?>
         <item>
         ....<livre titre="labd">
-        ........<titre>edition</titre>
-        ........<edition>edition</edition>
-        ....</livre>
-        ....<livre>
-        ........<titre>editions</titre>
-        ........<edition>edition</edition>
-        ....</livre>
-        ....<livre titre="labda">
-        ........<titre>edition</titre>
-        ........<edition>edition</edition>
-        ....</livre>
+                <titre>edition</titre>
+                <edition>edition</edition>
+            </livre>
+            <livre>
+                <titre>editions</titre>
+                <edition>edition</edition>
+            </livre>
+            <livre titre="labda">
+                <titre>edition</titre>
+                <edition>edition</edition>
+            </livre>
         </item>
         ```
 

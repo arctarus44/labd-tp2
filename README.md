@@ -6,27 +6,27 @@ Arthur Dewarumez
 
 exercice 1
 ----------
-	1. *//livre[titre="edition"] sélection le ou les nœuds livre dont le fils
-	   titre faut "edition"
-	   //livre[titre=edition] sélection le ou les nœuds livre dont le file
-	   titre est identique au nœud edition
+1.//livre[titre="edition"] sélection le ou les nœuds livre dont le fils
+titre faut "edition"
+//livre[titre=edition] sélection le ou les nœuds livre dont le file
+titre est identique au nœud edition
 
-	   Pour que ces le résultat de ces deux expressions soit égale, on peu utiliser le
-	   fichier suivant
+Pour que ces le résultat de ces deux expressions soit égale, on peu utiliser le
+fichier suivant
 
-	```xml
-	<?xml version="1.0" encoding="UTF-8"?>
-	<bibliotheque>
-		<livre>
-			<titre>edition</titre>
-			<edition>edition</edition>
-		</livre>
-		<livre>
-			<titre>editions</titre>
-			<edition>edition</edition>
-		</livre>
-	</bibliotheque>
-	```
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<bibliotheque>
+<livre>
+<titre>edition</titre>
+<edition>edition</edition>
+</livre>
+<livre>
+<titre>editions</titre>
+<edition>edition</edition>
+</livre>
+</bibliotheque>
+```
 
 
 

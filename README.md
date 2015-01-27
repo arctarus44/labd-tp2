@@ -32,7 +32,7 @@ exercice 1
 * /item/livre[@titre="labd"] [position()=last()] : retourne les élément livre contenant un attribut titre à labd et sélectionne le dernier
 * /item/livre[position()=last()] [@titre="labd"] : retourne le dernier éléments livre et filtre en fonction de la présence d'un attribut titre valant labd
 
-* ```xml
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <item>
 	<livre titre="labd">

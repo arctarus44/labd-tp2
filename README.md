@@ -35,7 +35,7 @@ exercice 1
         *```xml
         <?xml version="1.0" encoding="UTF-8"?>
         <item>
-        ....<livre titre="labd">
+            <livre titre="labd">
                 <titre>edition</titre>
                 <edition>edition</edition>
             </livre>

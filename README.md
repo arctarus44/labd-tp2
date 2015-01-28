@@ -85,7 +85,6 @@ exercice 2
 3. //fruit[@type="clementine"][@calibre="1"]//bio/../origine
 4. //origine[@region="Bretagne"]/../producteur
 
-
 exercice 3
 ----------
 * recettes 1:
@@ -96,8 +95,8 @@ exercice 3
     5. count(/cuisine/recette)
     6. /cuisine/recette[count(./ingredients/ingredient)<7]
     7. /cuisine/recette/titre[count(../ingredients/ingredient)<7]
-    8.
-    9.
+    8. /cuisine/recette/titre[contains(../ingredients/ingredient/nom_ing[text()], "farine")]
+    9. /cuisine/recette/titre[contains(translate(../categorie, 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), "entrée")]
 
 * recettes 2:
     1. //titre
@@ -107,8 +106,8 @@ exercice 3
     5. count(/cuisine/recette)
     6. /cuisine/recette[count(./ingredients/ing-recette)<7]
     7. /cuisine/recette/titre[count(../ingredients/ing-recette)<7]
-    8.
-    9.
+    8. /cuisine/recette/titre[contains(../ingredients/ing-recette/@ingredient, "farine")]
+    9. //recette/titre[contains(../@categ, /cuisine//categorie[contains(text(), "Entrée")]/@id)]
 
 
 exercice 4
@@ -121,4 +120,3 @@ exercice 4
 6. /plist/dict[position()=1]/key[text()="Tracks"]/following-sibling::dict[position()=1]/dict/key[text()="Name"]/following-sibling::string[position()=1 and ../key[text()="Play Count"]/following-sibling::integer[position()=1 and text()>="1"]]
 7./plist/dict[position()=1]/key[text()="Tracks"]/following-sibling::dict[position()=1]/dict/key[text()="Name"]/following-sibling::string[position()=1 and count(../key[text()="Play Count"]) = 0]
 8.
-9.
